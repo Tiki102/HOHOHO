@@ -34,14 +34,14 @@ function draw_game()
 	draw_player()
 	draw_msg()
 	draw_ui()
-	if deer==true then
-	anime_deer()
+	if deer then
+ 	anime_deer()
 	end
-	if snow==true then
-	anime_snow()
+	if snow then
+	 anime_snow()
 	end
-	if santa==true then
-	anime_santa()
+	if santa then
+ 	anime_santa()
 	end
 end
 -->8
@@ -98,7 +98,9 @@ function player_movement()
 		p.start_oy=newoy
 		p.anim_t=1
 	end
+	
 --animtion
+
 	p.anim_t=max(p.anim_t-0.125,0)
 	p.ox=p.start_ox*p.anim_t
 	p.oy=p.start_oy*p.anim_t
@@ -136,7 +138,9 @@ function interact(x,y)
   and p.key==0 then
   create_msg("porte","oh non, c'est ferme !\nsi seulement j'avais une clef...")
 		sfx(0)
+		
 --messages
+
  elseif x==7 and y==4 then
  	create_msg("panneau",
  	"aide tincelle a trouver les 3 \ncardeaux perdus par papa noel.")
