@@ -3,7 +3,7 @@ version 38
 __lua__
 --hohoho!
 --cree par gigi, tijana et karina
---avec la legere contribution de 
+--remerciment pour leur contribution de 
 --tom,philippe & chichi 
 
 function init_game()
